@@ -26,4 +26,6 @@ The console will now show you when you press a button that maps to a controller 
 Press the back button on the DJ contoller to exit the program
 
 ## Control Schematics
-Coming soon!
+### Important: Left Midi pad must be set to `Hot Cue` and Right Midi pad must be set to `Sampler`
+
+More Coming soon!
