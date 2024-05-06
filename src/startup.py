@@ -20,7 +20,7 @@ mapper =  ControlMap(controlchangeHelper, noteHelper)
 print('Gamepad Has Started')
 
 for msg in input_port:
-    print(msg)
+    #print(msg)
     mapper.mapMidiToGamepad(msg)
     gamepad.update()
 
