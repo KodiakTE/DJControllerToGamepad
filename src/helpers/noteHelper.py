@@ -6,6 +6,7 @@ class noteHelper:
         self._leftJoyDown = False
         self._leftJoyLeft = False
         self._leftJoyRight = False
+        self.leftJoystickNotes = set([1, 5, 4, 6])
         self.__noteMappings = {
             52: vg.XUSB_BUTTON.XUSB_GAMEPAD_A,
             48: vg.XUSB_BUTTON.XUSB_GAMEPAD_B,
@@ -26,7 +27,7 @@ class noteHelper:
     
     def noteOnMap(self, midiMsg):
         #Bring to Joystick Handler
-        if(midiMsg.note in set([1, 5, 4, 6])):
+        if(midiMsg.note in self.leftJoystickNotes):
             self.__leftJoystickHandler(midiMsg)
         if(midiMsg.note in self.__noteMappings and not ((midiMsg.note == 54 and midiMsg.channel == 0) or (midiMsg.note == 54 and midiMsg.channel == 1))): #Extra note logic here to avoid collision with deck spinner
             self.__noteToButton(midiMsg.note, midiMsg.velocity)

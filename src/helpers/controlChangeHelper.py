@@ -1,6 +1,7 @@
 class controlChangeHelper:
     def __init__(self, gamepad):
         self._gamepad = gamepad
+        self.deadzones = set([63, 64, 65])
         self.rightJoyX = 64
         self.leftJoyY = 64
 
@@ -28,10 +29,9 @@ class controlChangeHelper:
         x= self.__convertSpinnerValues(self.rightJoyX)
         y= self.__convertSpinnerValues(self.leftJoyY)
 
-        deadzones = set([63, 64, 65])
-        if (self.leftJoyY in deadzones):
+        if (self.leftJoyY in self.deadzones):
             y = 0
-        if(self.rightJoyX in deadzones):
+        if(self.rightJoyX in self.deadzones):
             x = 0
 
         print(f"Right Joystick Movement: x={x} y={y} ")
