@@ -27,5 +27,4 @@ Press the back button on the DJ contoller to exit the program
 
 ## Control Schematics
 ### Important: Left Midi pad must be set to `Hot Cue` and Right Midi pad must be set to `Sampler`
-
-More Coming soon!
+![Controller Schematics smaller](https://github.com/KodiakTE/DJControllerToGamepad/assets/59039183/974b3291-fe24-4441-8235-1f7329301594)
