@@ -8,7 +8,7 @@ This project requires Python 3.12 or higher
 
 Look at the [requirements.txt](https://github.com/KodiakTE/DJControllerToGamepad/blob/main/requirements.txt) file to see the packages that need to be installed in your environment. 
 
-Example: `pip install mido`
+Example: `pip install -r requirements.txt`
 
 ## Getting Started
 Run the project with `python startup.py`
